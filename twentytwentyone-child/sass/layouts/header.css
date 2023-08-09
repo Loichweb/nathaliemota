@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/*##### HEADER ######*/
+#masthead {
+  background-color: white;
+  padding: 0%;
+  max-width: 100%;
+}
+#masthead a {
+  text-decoration: none;
+  font-family: "Space mono";
+  font-size: 16px;
+}
+
+.site-logo .custom-logo {
+  margin-left: 80px;
+}
+
+#primary-menu-list {
+  margin-right: 200px;
+}
+
+/* Media query pour les écrans ayant une largeur maximale de 481 pixels (mobiles) */
+@media only screen and (max-width: 481px) {
+  #masthead {
+    /* Ajoutez ici les styles spécifiques pour #masthead sur mobile */
+    /* Par exemple : */
+    background-color: #ffffff;
+    padding: 34px;
+  }
+  /* Styles spécifiques pour la logo sur mobile */
+  .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo img {
+    max-width: 138px;
+    max-height: 9px;
+    margin-left: 30px;
+  }
+  .primary-navigation-open .primary-navigation > .primary-menu-container {
+    margin-top: 66px;
+    background-color: #E00000;
+  }
+  .primary-navigation-open .menu-button-container {
+    background-color: white;
+  }
+  .primary-navigation-open .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
+    display: block;
+    z-index: 999 !important;
+    top: 0px !important;
+  }
+  .primary-navigation > .primary-menu-container {
+    transition: none;
+  }
+}/*# sourceMappingURL=header.css.map */

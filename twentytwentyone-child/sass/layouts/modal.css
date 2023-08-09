@@ -1,0 +1,122 @@
+/*####### FORMULAIRE (MODAL) #######*/
+/* The Modal (header overflow) */
+.modal-header {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.modal-header .text-overflow {
+  font-family: "Poppins-Italic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 48px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #000000;
+  margin-left: -150px;
+}
+.modal-header .text-overflow-2 {
+  font-family: "Poppins-Italic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 48px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #000000;
+  margin-left: -262px;
+}
+
+/* The Modal (background) */
+.modal {
+  /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  /* Modal Content/Box */
+}
+.modal .modal-content {
+  background-color: #fefefe;
+  margin: 8% auto;
+  border: 5px solid #000000;
+  width: 597px;
+  height: 769px;
+  overflow: hidden;
+  animation: fadeInDown 1s 1;
+}
+
+/* The Modal (input) */
+.form-modal {
+  justify-content: center;
+  display: flex;
+  margin-top: 49px;
+}
+.form-modal .wpcf7-text {
+  border: 1px solid #B8BBC2;
+  box-sizing: border-box;
+  width: 263px;
+  height: 40px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+.form-modal .wpcf7-textarea {
+  border: 1px solid #B8BBC2;
+  box-sizing: border-box;
+  width: 263px;
+  height: 210px;
+  margin-bottom: 2px;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+.form-modal label {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  padding-bottom: 2px;
+  /* identical to box height */
+  color: #313144;
+}
+.form-modal label text {
+  padding-bottom: 10px !important;
+}
+.form-modal .wpcf7-form > p {
+  display: flex;
+  justify-content: center;
+}
+.form-modal .wpcf7-submit {
+  width: 263px;
+  height: 50px;
+  margin-left: 20px;
+  background-color: #D8D8D8 !important;
+  box-shadow: inset 0 0 0 0 black;
+  border: none;
+  transition: ease-out 0.4s !important;
+}
+.form-modal .wpcf7-submit:hover {
+  box-shadow: inset 400px 0 0 0 black;
+}
+.form-modal .wpcf7-form input[value=Envoyer] {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17.77px;
+  letter-spacing: 0.1em;
+  color: #000000 !important;
+  transition: padding-right 1s;
+}
+.form-modal .wpcf7-form input[value=Envoyer]:hover {
+  font-weight: bold;
+  color: rgb(255, 255, 255) !important;
+}
+.form-modal .wpcf7-spinner {
+  margin: 0px !important;
+}/*# sourceMappingURL=modal.css.map */
