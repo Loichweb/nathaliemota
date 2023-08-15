@@ -30,6 +30,7 @@
 /* The Modal (background) */
 .modal {
   /* Hidden by default */
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -53,8 +54,6 @@
 
 /* The Modal (input) */
 .form-modal {
-  justify-content: center;
-  display: flex;
   margin-top: 49px;
 }
 .form-modal .wpcf7-text {
@@ -119,4 +118,61 @@
 }
 .form-modal .wpcf7-spinner {
   margin: 0px !important;
+}
+
+@media (max-width: 767px) {
+  /* Le modal complet pour la version mobile */
+  .modal-header .text-overflow, .modal-header .text-overflow-2 {
+    font-family: "Poppins-Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-left: -150px;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 95px;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    border: 3px solid #000000;
+    width: 100%;
+    max-width: 286px;
+    height: auto;
+    max-height: 583px;
+  }
+  .modal-content .wpcf7-form > p {
+    margin-top: -5px;
+  }
+  .form-modal {
+    display: flex;
+    justify-content: center;
+    margin-top: 9px;
+  }
+  .form-modal .wpcf7-text,
+  .form-modal .wpcf7-textarea {
+    width: 190px;
+  }
+  .form-modal .wpcf7-textarea {
+    height: 149px;
+  }
+  .form-modal .wpcf7-submit {
+    width: 190px;
+    margin-left: 0;
+    margin-top: 1px;
+    display: flex;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=modal.css.map */

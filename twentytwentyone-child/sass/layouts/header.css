@@ -9,6 +9,7 @@
   text-decoration: none;
   font-family: "Space mono";
   font-size: 16px;
+  color: #000000;
 }
 
 .site-logo .custom-logo {
@@ -26,6 +27,20 @@
     /* Par exemple : */
     background-color: #ffffff;
     padding: 34px;
+  }
+  #masthead a {
+    font-size: 44px;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  .primary-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .primary-menu-container #primary-menu-list {
+    margin: 0;
   }
   /* Styles spécifiques pour la logo sur mobile */
   .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo img {
@@ -46,6 +61,6 @@
     top: 0px !important;
   }
   .primary-navigation > .primary-menu-container {
-    transition: none;
+    transition: all 0.5s ease-out;
   }
 }/*# sourceMappingURL=header.css.map */
