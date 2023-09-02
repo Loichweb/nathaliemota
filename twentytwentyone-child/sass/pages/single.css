@@ -1,0 +1,132 @@
+/**** PART 1 ***/
+.Card-photo {
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 38px;
+  font-family: "Space mono";
+  grid-gap: 1rem;
+  display: flex;
+}
+.Card-photo .Card-description {
+  border-bottom: 1px solid black;
+  align-self: flex-end;
+  padding-bottom: 43px;
+  width: 50%;
+}
+.Card-photo .Card-image {
+  height: 63vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+}
+.Card-photo h1 {
+  font-style: italic;
+  padding-bottom: 40px;
+  width: 70%;
+  font-size: 66px;
+  line-height: 58px;
+}
+.Card-photo p {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-bottom: 9px;
+}
+
+/**** PART 2 ***/
+.Photo-contact { /* Interaction-photo*/
+  height: 118px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+.Photo-contact > div {
+  display: flex;
+  align-items: center;
+}
+.Photo-contact .texte {
+  font-size: 14px;
+  font-family: "Poppins";
+}
+.Photo-contact .btn-contact {
+  width: 272px;
+  height: 50px;
+  font-size: 12px;
+  border: none;
+  font-family: "Space mono";
+  position: relative;
+  left: 30%;
+  cursor: pointer;
+  background-color: #D8D8D8;
+}
+.Photo-contact .photo-thumbnail { /* Interaction-navigation*/
+  width: 108px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.Photo-contact .photo-thumbnail .preview {
+  width: 78px;
+  height: 50%;
+  margin: auto 0 auto auto;
+}
+.Photo-contact .photo-thumbnail .preview img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Photo-contact .photo-thumbnail .preview .previous-image {
+  margin-top: 17%;
+}
+.Photo-contact .photo-thumbnail .preview .next-image {
+  margin-top: -90%;
+}
+.Photo-contact .photo-thumbnail .fleches {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 64px;
+  margin-left: 31px;
+}
+.Photo-contact .photo-thumbnail .fleches .fleche {
+  width: 25px;
+  cursor: pointer;
+}
+
+/**** PART 3 ***/
+/**** PART RESPONSIVE ***/
+@media only screen and (min-device-width: 375px) and (max-device-width: 1000px) {
+  .Photo-contact .photo-thumbnail {
+    display: none;
+  }
+  .Card-photo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .Card-photo .Card-description {
+    width: 100%;
+  }
+  .Card-photo .Card-image {
+    width: 100%;
+    height: auto;
+  }
+  .Photo-contact > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .Photo-contact > div .btn-contact {
+    left: 0px;
+  }
+  .interest-part {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+}/*# sourceMappingURL=single.css.map */

@@ -18,6 +18,8 @@ Updated: 2023-08-02 08:32:59
 @import "sass/layouts/footer.css";
 @import "sass/layouts/nav.css";
 @import "sass/layouts/modal.css";
+@import "sass/pages/single.css";
+@import "sass/pages/photo_block.css";
 
 
 /*------------Font-Face---------------*/
@@ -49,4 +51,5 @@ Updated: 2023-08-02 08:32:59
 body {
   background-color: white;
 }
+
 

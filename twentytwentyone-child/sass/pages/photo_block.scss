@@ -1,0 +1,142 @@
+/* photoblock */
+
+.photoblock{
+    margin-left: 7%;
+    margin-right: 7%;
+    font-family: 'SpaceMono';
+  
+    h3 {
+      font-family: 'Space mono';
+      font-size: 18px;
+    }
+    a {
+        text-decoration: none;
+      }
+  }
+  
+  .thumbnail {
+    height: 495px !important;
+    width: 564px !important;
+    object-fit: cover;
+  }
+  
+  #photosapp {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+    padding-top: 69px;
+  }
+  
+  
+  #btn-acc {
+    text-align: center;
+    background: #D8D8D8;
+    font-size: 12px;
+    color: black;
+    width: 274px;
+    height: 50px;
+    border: 0px;
+    padding: 1vh;
+    font-family: 'Poppins', 'sans serif';
+    margin: auto;
+    transition: rotate 1 spin 4s ease-in;
+  
+    .photoblock & {
+      margin-top: 3vh;
+      margin-bottom: 5vh;
+      display: block;
+    }
+  }
+  
+  /* overlay image */
+  .overlay-image {
+    position: relative;
+    width: auto;
+    margin-bottom:5vh;
+    .texte{
+        position: absolute;
+        bottom: 1vh;
+        left:1vw;
+        font-family: 'Poppins','sans serif';
+        color:#ffffff;
+    }
+}
+
+.overlay-image .hover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    .eye{
+        position: absolute;
+        top: 45%;
+        left:44%;
+    }
+    .categphoto{ 
+        position: absolute;
+        right: -23vw;
+        bottom: 0vw;
+    }
+  
+}
+
+.overlay-image:hover .hover {
+    opacity: 1;
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.92) 100%);
+}
+.full_screen{
+width: 3vw;
+height:6vh;
+right: 1vw;
+position: absolute;
+top: 1vh;
+
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 1000px) {
+   
+    .photoblock{
+        margin-top: -47px;
+        #btn-acc {
+          display: none;
+        }
+        h3 {
+          display: flex;
+          justify-content: center;
+      }
+
+    }
+    #photosapp {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -50px;
+    }
+    .thumbnail {
+        object-fit: cover;
+        height: 80% !important;
+        width: 100% !important;
+      }
+      .overlay-image .hover .categphoto {
+        right: -43vw;
+      
+    }
+
+    .overlay-image{
+          margin-bottom: -120px;
+          overflow: hidden;
+
+          .hover {
+            height: 80%;
+            
+        }
+      } 
+   
+    .full_screen {
+        width: 9vw;
+    }
+}
+
+

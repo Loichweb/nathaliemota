@@ -6,7 +6,6 @@
   <div class="modal-header">
     <p class="text-overflow">contactcontactcontactcontactcontact </br> <span class="text-overflow-2">contactcontactcontactcontactcontact </span></p>
   </div>
-  <span id="close"></span>
   <div class="form-modal">
     <?php
     // On insère le formulaire de demandes de renseignements

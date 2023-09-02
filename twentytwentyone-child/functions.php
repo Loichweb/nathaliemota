@@ -23,7 +23,7 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // Charger le fichier script.js
 function child_theme_enqueue_scripts() {
-    wp_enqueue_script( 'child-theme-script', get_stylesheet_directory_uri() . '/js/script.js', array(), '1.0', true );
+    wp_enqueue_script( 'child-theme-script', get_stylesheet_directory_uri() . '/js/script.js', array('jquery'), '1.0', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'child_theme_enqueue_scripts' );
@@ -42,13 +42,3 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
-
-/* JAVA SCRIPT TEST */
-function ti_custom_javascript() {
-    ?>
-        <script>
-         console.log ('test');
-        </script>
-    <?php
-}
-add_action('wp_head', 'ti_custom_javascript');

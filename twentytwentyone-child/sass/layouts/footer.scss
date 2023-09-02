@@ -25,4 +25,16 @@
     gap: 70px;
 }
 
+/**** PART RESPONSIVE ***/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 1000px) { 
+
+    .footer-navigation-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+}
 
