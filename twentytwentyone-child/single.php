@@ -98,6 +98,9 @@ get_header();
 				<a href="<?php echo home_url()?>"><button id="btn-acc">Toutes les photos </button></a>
 	</div>
 
+
+
+
 <?php
 
 get_footer();

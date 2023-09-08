@@ -14,7 +14,9 @@
  * @since Twenty Twenty-One 1.0
  */
 
-get_header(); ?>
+
+get_header();
+?>
 
 <?php if ( is_home() && ! is_front_page() && ! empty( single_post_title( '', false ) ) ) : ?>
 	<header class="page-header alignwide">
@@ -22,24 +24,56 @@ get_header(); ?>
 	</header><!-- .page-header -->
 <?php endif; ?>
 
+<!-- BANNER -->
+<div class="hero">
+    <?php 
+    $randomImage = get_random_custom_post_type_image();
+    if ($randomImage) {
+        echo '<img src="' . esc_url($randomImage) . '" alt="Image aléatoire">';
+    } else {
+        echo '<p>Aucune image trouvée.</p>';
+    }
+    ?>
+	<h1 id="test">PHOTOGRAPHE EVENT </h1>
+
+</div>
+
+<!-- FILTRES AJAX -->
+<div class="post-filters">
+    <div>
+        <label for="cat-select"></label>
+
+     <select name="cat" id="cat-select">
+            <option selected class="selectedoption" value="all">Catégories</option>
+			<?php echo ajoutCategorie();?>
+     </select>
+    </div>
+    <div class="adjust">
+        <label for="form-select"></label>
+
+        <select name="form" id="form-select">
+		  <option selected class="selectedoption" value="all">Formats</option>
+         <?php echo ajoutFormat();?>
+        </select>
+    </div>
+    <div>
+     <label for="tri-select"></label>
+
+     <select name="tri" id="tri-select" placeholder='trier par'>
+         <option selected class="selectedoption" value="">Trier par</option>
+		<?php echo ajoutOrderDirection();?>
+     </select>
+    </div>
+</div>
+
+
+
+<!-- PHOTOBLOCK 3 -->
+<div class="photoblock">
+    <div id="photosapp">
+        <?php get_template_part('template-parts/photo_block'); ?>
+    </div>
+	
+</div>
 <?php
-if ( have_posts() ) {
-
-	// Load posts loop.
-	while ( have_posts() ) {
-		the_post();
-
-		get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) );
-	}
-
-	// Previous/next page navigation.
-	twenty_twenty_one_the_posts_navigation();
-
-} else {
-
-	// If no content, include the "No posts found" template.
-	get_template_part( 'template-parts/content/content-none' );
-
-}
-
 get_footer();

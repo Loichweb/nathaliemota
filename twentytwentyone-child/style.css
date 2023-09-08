@@ -20,7 +20,9 @@ Updated: 2023-08-02 08:32:59
 @import "sass/layouts/modal.css";
 @import "sass/pages/single.css";
 @import "sass/pages/photo_block.css";
-
+@import "sass/pages/index.css";
+@import "sass/layouts/lightbox.css";
+@import "sass/compenents/filtres.css";
 
 /*------------Font-Face---------------*/
 
@@ -52,4 +54,8 @@ body {
   background-color: white;
 }
 
+.site-header, .site-main, .widget-area, .site-footer {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
 

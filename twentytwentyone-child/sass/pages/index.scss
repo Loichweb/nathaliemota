@@ -1,0 +1,54 @@
+
+.hero {
+    max-width: 100%; 
+    height: 962px;
+    position: relative;
+    overflow: hidden;
+   
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    #test {
+        /* outline */
+  -webkit-text-stroke: 3px #ffffff;
+  -webkit-text-fill-color: transparent;
+  
+  /* fallback */
+  color: #ffffff;
+  
+  /* for demo purpose */
+    font-weight: 700;
+  font-size: 96px;
+  line-height: 142.18px;
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-style: italic;
+    }
+    
+}
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 1000px) { 
+    .hero {
+        height: 263px; }
+
+        img {
+        max-width: 379px;
+        max-height: 263px;
+
+        }
+        #test {
+           font-size: 27px !important; 
+        }
+ }
+

@@ -25,6 +25,7 @@
     justify-content: space-between;
     gap: 36px;
     padding-top: 69px;
+    flex-wrap: wrap;
   }
   
   
@@ -47,6 +48,29 @@
       display: block;
     }
   }
+
+  #load-more-photos {
+    text-align: center;
+      background: #D8D8D8;
+      font-size: 12px;
+      color: black;
+      width: 274px;
+      height: 50px;
+      border: 0px;
+      padding: 1vh;
+      font-family: 'Poppins', 'sans serif';
+      margin: auto;
+  }
+
+  #load-more-container {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+
+  }
   
   /* overlay image */
   .overlay-image {
@@ -59,6 +83,7 @@
         left:1vw;
         font-family: 'Poppins','sans serif';
         color:#ffffff;
+        font-size: 14px;
     }
 }
 
@@ -93,7 +118,15 @@ right: 1vw;
 position: absolute;
 top: 1vh;
 
+}
+.full_screen_icon:active {
+  outline: none !important;
+  
+}
 
+.full_screen:active {
+  
+  background-color: transparent !important;
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 1000px) {
@@ -110,14 +143,14 @@ top: 1vh;
 
     }
     #photosapp {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: -50px;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
     }
     .thumbnail {
-        object-fit: cover;
-        height: 80% !important;
-        width: 100% !important;
+      object-fit: cover;
+      max-width: 316px !important;
+      max-height: 274px !important;
       }
       .overlay-image .hover .categphoto {
         right: -43vw;
@@ -125,17 +158,29 @@ top: 1vh;
     }
 
     .overlay-image{
-          margin-bottom: -120px;
+          // margin-bottom: -120px;
           overflow: hidden;
+          margin-bottom :0px;
+          .texte{
+            left: 1px;
+        }
 
           .hover {
-            height: 80%;
+            height: 100%;
+    width: 98%;
             
         }
       } 
    
     .full_screen {
         width: 9vw;
+    }
+
+
+    #load-more-container {
+     
+      gap: 36px;
+  
     }
 }
 

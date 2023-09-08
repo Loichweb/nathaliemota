@@ -1,0 +1,49 @@
+/* filtres*/
+.post-filters{
+    display: flex;
+    justify-content: space-between;
+    margin: -47px 105px -127px 99px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+
+}
+
+
+.adjust{
+    margin-left:-30vw;
+   
+}
+
+.post-filters select{
+    width:14vw;
+    border-radius: 8px;
+    border-color:  #B8BBC2;
+    background: url('/wp-content/themes/twentytwentyone-child/assets/images/arrowfiltre.svg') right center/20% 20% no-repeat;
+   
+}
+#tri-select{
+    width:19vw;
+    
+}
+
+.post-filters div{
+    display: flex;
+    flex-direction: column;
+}
+
+select{
+    background-color: #ffffff;
+    border: solid  black 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

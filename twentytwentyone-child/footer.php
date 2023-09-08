@@ -16,6 +16,7 @@
 		</div><!-- #primary -->
 	</div><!-- #content -->
 	<?php get_template_part('template-parts/modal-template'); ?>
+	<?php get_template_part( 'template-parts/lightbox' ); ?>
 	<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
 	<footer id="colophon" class="site-footer">

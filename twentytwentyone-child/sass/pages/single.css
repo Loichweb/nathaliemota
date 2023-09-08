@@ -97,7 +97,6 @@
   cursor: pointer;
 }
 
-/**** PART 3 ***/
 /**** PART RESPONSIVE ***/
 @media only screen and (min-device-width: 375px) and (max-device-width: 1000px) {
   .Photo-contact .photo-thumbnail {
