@@ -39,12 +39,12 @@ get_header();
 </div>
 
 <!-- FILTRES AJAX -->
-<div class="post-filters">
+<div class="post-filters" tabindex="0">
     <div>
         <label for="cat-select"></label>
 
      <select name="cat" id="cat-select">
-            <option selected class="selectedoption" value="all">Catégories</option>
+            <option value="all">Catégories</option>
 			<?php echo ajoutCategorie();?>
      </select>
     </div>
@@ -52,7 +52,7 @@ get_header();
         <label for="form-select"></label>
 
         <select name="form" id="form-select">
-		  <option selected class="selectedoption" value="all">Formats</option>
+		  <option  value="all">Formats</option>
          <?php echo ajoutFormat();?>
         </select>
     </div>
@@ -60,7 +60,7 @@ get_header();
      <label for="tri-select"></label>
 
      <select name="tri" id="tri-select" placeholder='trier par'>
-         <option selected class="selectedoption" value="">Trier par</option>
+         <option value="">Trier par</option>
 		<?php echo ajoutOrderDirection();?>
      </select>
     </div>

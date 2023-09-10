@@ -128,7 +128,7 @@
   margin: 0px !important;
 }
 
-@media (max-width: 767px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 1000px) {
   /* Le modal complet pour la version mobile */
   .modal-header .text-overflow, .modal-header .text-overflow-2 {
     font-family: "Poppins-Italic";
@@ -160,11 +160,15 @@
     max-width: 286px;
     height: auto;
     max-height: 583px;
+    animation: fadeInDown 1s 1;
   }
   .form-modal {
     display: flex;
     justify-content: center;
     margin-top: 9px;
+  }
+  .form-modal #refPhotoInput {
+    width: 193px;
   }
   .form-modal .wpcf7-text,
   .form-modal .wpcf7-textarea {
@@ -182,5 +186,13 @@
   }
   .form-modal .wpcf7-spinner {
     display: none;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }/*# sourceMappingURL=modal.css.map */

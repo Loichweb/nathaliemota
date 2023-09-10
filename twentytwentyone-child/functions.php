@@ -53,17 +53,6 @@ function get_random_custom_post_type_image() {
 
 // END ENQUEUE PARENT ACTION
 
-// add menu header and footer :
-function register_my_menus() {
-    register_nav_menus(
-    array(
-    'header-menu' => __( 'Menu Header' ),
-    'footer-menu' => __( 'Menu Footer' ),
-    )
-    );
-}
-add_action( 'init', 'register_my_menus' );
-
 
 // PAGINATION INFINIE
 

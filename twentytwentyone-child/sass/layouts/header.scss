@@ -21,11 +21,9 @@
   margin-right: 200px;
 }
 
-/* Media query pour les écrans ayant une largeur maximale de 481 pixels (mobiles) */
-@media only screen and (max-width: 481px) {
+/* Media query pour les écrans ayant une largeur maximale de 767 pixels (mobiles) */
+@media only screen and (max-width: 767px) {
   #masthead {
-    /* Ajoutez ici les styles spécifiques pour #masthead sur mobile */
-    /* Par exemple : */
     background-color: #ffffff;
     padding: 34px;
     a {
@@ -33,6 +31,7 @@
       color: white;
       display: flex;
       justify-content: center;
+      margin-left: -7px ;
     }
   }
   .primary-menu-container { 
@@ -68,9 +67,14 @@
   top: 0px !important;
 }
 .primary-navigation > .primary-menu-container {
-  // transition: none;
   transition: all 0.5s ease-out;
 }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  #masthead a {
+    margin-left: -7px;
+  }
 }
 
 

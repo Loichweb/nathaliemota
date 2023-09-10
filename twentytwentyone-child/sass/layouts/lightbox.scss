@@ -75,11 +75,22 @@ z-index: 12;
     margin-left: 50px;
     margin-right: 50px;
     min-height: 100vh;
+    flex-direction: column;
 }
 
 .lightbox button:focus {
     outline: none;
 };
+
+#image-title {
+    display: flex;
+    justify-content: start;
+    left: 31%;
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    font-family: Poppins;
+}
 
 @keyframes lightboxIn {
     from {
@@ -89,3 +100,16 @@ z-index: 12;
         opacity: 1;
     }
 }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 1000px) { 
+.lightbox__close {  
+height: 20%;
+right: 10%;}
+
+.lightbox__next{
+    right: 0;
+}
+.lightbox__prev {
+    left: 0;
+}
+ }

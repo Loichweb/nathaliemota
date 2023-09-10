@@ -2,41 +2,44 @@
 .post-filters{
     display: flex;
     justify-content: space-between;
-    margin: -47px 105px -127px 99px;
+    margin: 0% 7% -9% 7%;
     font-family: "Poppins", sans-serif;
     font-size: 12px;
-
-}
-
-
-.adjust{
-    margin-left:-30vw;
-   
-}
-
-.post-filters select{
-    width:14vw;
-    border-radius: 8px;
-    border-color:  #B8BBC2;
-    background: url('/wp-content/themes/twentytwentyone-child/assets/images/arrowfiltre.svg') right center/20% 20% no-repeat;
-   
-}
-#tri-select{
-    width:19vw;
+    select{
+        width: 260px;
+        border-radius: 8px;
+        border: solid #B8BBC2 1px;
     
+        background: url('/wp-content/themes/twentytwentyone-child/assets/images/arrowfiltre.svg') right center/20% 20% no-repeat;
+    
+    }
+    .adjust{
+        margin-left: -32%;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-.post-filters div{
-    display: flex;
-    flex-direction: column;
-}
-
-select{
-    background-color: #ffffff;
-    border: solid  black 1px;
-}
 
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 1000px) { 
+.post-filters {
+    margin : -66px 29px 5px 25px;
+    gap: 132px;
+    justify-content: space-between;
+    overflow-x: scroll;
+
+    select {
+            width: 270px;
+    }
+    .adjust {
+        margin-left: 0%;
+    }
+} 
+ }
 
 
 

@@ -64,8 +64,7 @@
 /* The Modal (input) */
 
 .form-modal{
-    // justify-content: center;
-    // display: flex;
+   
     margin-top: 49px;
     
     .wpcf7-text{
@@ -159,7 +158,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 1000px) { 
     /* Le modal complet pour la version mobile */
     .modal-header{
         .text-overflow, .text-overflow-2 {
@@ -195,7 +194,7 @@
         max-width: 286px;
         height: auto;
         max-height: 583px;
-        // animation: fadeInDown 1s 1;
+        animation: fadeInDown 1s 1;
         // overflow: hidden;
         
     }
@@ -204,6 +203,9 @@
         display: flex;
         justify-content: center;
         margin-top: 9px;
+        #refPhotoInput {
+            width: 193px;
+         }
         
 
         .wpcf7-text,
@@ -232,6 +234,13 @@
 
   
 
-
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
   
